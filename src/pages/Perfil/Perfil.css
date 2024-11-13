@@ -1,0 +1,94 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .form {
+    background-color: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .form input:focus {
+    border-color: #0066cc;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form button:hover {
+    background-color: #005bb5;
+  }
+  
+  .form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .form button:first-of-type {
+    margin-top: 15px;
+  }
+  
+  @media (max-width: 480px) {
+    .form {
+      padding: 20px;
+      width: 100%;
+    }
+  
+    .form h2 {
+      font-size: 20px;
+    }
+  
+    .form input,
+    .form button {
+      font-size: 14px;
+    }
+  
+    .form label {
+      font-size: 12px;
+    }
+  }
+  
